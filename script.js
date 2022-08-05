@@ -1,12 +1,11 @@
-
-const elements = document.querySelectorAll('[PUT_YOUR_ATTRIBUTE_NAME]');
-const filterDiv = document.querySelector("#PUT_YOUR_CODEBLOCK_ID") //
+const attributeName = 'PUT_YOUR_ATTRIBUTE_NAME'
+const filterDiv = document.querySelector("#PUT_YOUR_CODEBLOCK_ID") // keep the #
+const elements = document.querySelectorAll('['+attributeName+']');
 let obj = {};
 
 
-console.log(elements);
 elements.forEach(el => {
-  const keys = el.getAttribute('PUT_YOUR_ATTRIBUTE_NAME').split(',');
+  const keys = el.getAttribute(attributeName).split(',');
   keys.forEach(key => {
     if(obj[key] === undefined){
       obj[key] = [];
@@ -22,7 +21,7 @@ Object.keys(obj).forEach(key => {
             // create a checkbox
             const checkbox = document.createElement('input');
             checkbox.type = "checkbox";
-            checkbox.name = "filter";
+            checkbox.name = "flt-checkbox";
             checkbox.classList.add("filter-checkbox");
             checkbox.value = key;
             checkbox.id = key;
