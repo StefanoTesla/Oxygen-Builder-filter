@@ -85,3 +85,4 @@ If everything is ok, you shuld be able to see checkbox next to the button and so
 ![noOneSelected](https://user-images.githubusercontent.com/92517402/183074132-2c76bdee-8fb5-4661-976e-264331751f75.jpg)
 
 
+As I told, is a very simple, but efficent way to make a simple filter avoideng reloading the page, you can costumize it as you need, and if you find some bugs report to me! If you like a star it's appreciated ⭐
