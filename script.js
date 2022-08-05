@@ -22,7 +22,7 @@ Object.keys(obj).forEach(key => {
             // create a checkbox
             const checkbox = document.createElement('input');
             checkbox.type = "checkbox";
-            checkbox.name = "grapes";
+            checkbox.name = "filter";
             checkbox.classList.add("filter-checkbox");
             checkbox.value = key;
             checkbox.id = key;
