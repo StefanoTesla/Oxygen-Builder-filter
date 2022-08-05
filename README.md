@@ -10,6 +10,8 @@ One page of my website can be very long, so I decided to Improve user interactio
 
 - You cannot use it in paginate loop, or better, if the page is refreshed the filter is resetted to, if you refresh the content via js you need to invoke the filter function and hope it work (I didn't tested in this way).
 
+- You can use ACF costum field adding it dynamically as attribute
+
 This script basically hide the div that not contain the attribute selected, in case of multiple attribute (you can add with comma separator) the filter will show the div if one of the values is true.
 
 **There isn't any relationship rules (or,and).**
@@ -64,4 +66,22 @@ To add an attribute you can choose the div, go to **Advanced->Attributes** click
 
 # 5) Save an test It
 
-If everything is ok, you shuld be able to see checkbox next to the button
+If everything is ok, you shuld be able to see checkbox next to the button and something like this:
+
+**All attributes selected**
+
+![allSelected](https://user-images.githubusercontent.com/92517402/183073626-6bbe9b4b-6a03-4dde-9303-09b882812d29.jpg)
+
+**Only bar selected**
+
+![onlyBar](https://user-images.githubusercontent.com/92517402/183073875-b3715027-80bb-4700-9aab-a6302b9f3aac.jpg)
+
+**Only foo selected**
+
+![onlyFoo](https://user-images.githubusercontent.com/92517402/183074006-c2114d0c-9689-4910-ab7c-d0a3e0a4a5b7.jpg)
+
+**No One Selected**
+
+![noOneSelected](https://user-images.githubusercontent.com/92517402/183074132-2c76bdee-8fb5-4661-976e-264331751f75.jpg)
+
+
