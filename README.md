@@ -6,11 +6,11 @@ One page of my website can be very long, so I decided to Improve user interactio
 
 ## Where you can use
 
-- This filter is usable on a page, on the repeter or where you want, olso in ohter builders the most important thing is to have the possibility to add attribute to the object container div, and Oxygen is the best one for this.
+- This filter is usable on a page, on the repeter or where you want, olso in other builders the most important thing is to have the possibility to add attribute to the object container div, and Oxygen is the best one for this.
 
 - You cannot use it in paginate loop, or better, if the page is refreshed the filter is resetted to, if you refresh the content via js you need to invoke the filter function and hope it work (I didn't tested in this way).
 
-- You can use ACF costum field adding it dynamically as attribute
+- You can use ACF costum field adding it dynamically as attribute value
 
 This script basically hide the div that not contain the attribute selected, in case of multiple attribute (you can add with comma separator) the filter will show the div if one of the values is true.
 
@@ -18,32 +18,31 @@ This script basically hide the div that not contain the attribute selected, in c
 
 You can use multiple value for the attribute separating by comma with resulting html like this `<div class"what you want" attributeName="Value1,Value2,Value3">`
 
-
 ## How to use it
 
 This script need two block code, one custom css class, and div with attribute setted up.
 
 # 1) Add the filter box
 
-A costum code block where you want and past this code:
+A custmm code block where you want and past this code:
 
 `<button type="button" onclick="st-filter()">Filter!</button>`
 
-This is needed to fire the filter function, in this div will be append all the checkboxs to filter the data, but this is done by js after reading all the data attribute values, you can add your own costum css code to style as you want.
+This is needed to fire the filter function, in this div will be append all the checkboxs to filter the data, but this is done by js after reading all the data attribute values, you can add your own custom css code to style as you want.
 
 ![filter div codeblock](https://user-images.githubusercontent.com/92517402/183067878-1686016a-3d74-4d1e-b870-4e796abe025d.png)
 
 **Take note of the codeblock id, or rename as you want**
 
-note: in my case filter button is displaye before the option checkbox, if you want it before you can add a simple div with a custom id `<div class"what you want" id="filter-checkbox></div>` and use this div id in `PUT_YOUR_CODEBLOCK_ID` (see after where)
+note: in my case filter button is displaye before the option checkbox, if you want it, before the button code you can add a simple div with a custom id `<div class"what you want" id="filter-checkbox></div>` and use this div id in `PUT_YOUR_CODEBLOCK_ID` (see after where)
 
 # 2) Add the script function
 
-In the end of the page, or anyway after the content with the attributes you need to add another and past the code you will find on `script.js` file
+In the end of the page, or anyway after the content with attributes you need to add another code block and past the code you will find on `script.js` file
 
 ## 2-1)
 
-Replace `PUT_YOUR_ATTRIBUTE_NAME` (twice time) with the attribute you inserted on the div and 
+Replace `PUT_YOUR_ATTRIBUTE_NAME` with the attribute you inserted on the div and 
 repalace `PUT_YOUR_CODEBLOCK_ID` with the filter buttom code block ID (the one you added before)
 
 
@@ -85,6 +84,6 @@ If everything is ok, you shuld be able to see checkbox next to the button and so
 ![noOneSelected](https://user-images.githubusercontent.com/92517402/183074132-2c76bdee-8fb5-4661-976e-264331751f75.jpg)
 
 
-As I told, is a very simple, but efficent way to make a simple filter avoideng reloading the page, you can costumize it as you need, and if you find some bugs report to me! If you like a star it's appreciated ⭐
+As I told, is a very simple, but efficent way to make a simple filter avoiding page reload, you can customize it as you need, and if you find some bugs report to me! If you like a star it's appreciated ⭐
 
-Pro tip: don't kill me if the script is not wrote as a senior js developer would have done, making website is not my job (unfortunatly), and I don't use javascript every day.
+Pro tip: Don't kill me if the script is not wrote as a senior js developer would have done, making website is not my job (unfortunatly), and I don't use javascript every day.
