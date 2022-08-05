@@ -23,17 +23,17 @@ This script need two block code, one custom css class, and div with attribute se
 
 # 1) Add the filter box
 
-a costum code block where you want and past this code:
+A costum code block where you want and past this code:
 
 `<button type="button" onclick="st-filter()">Filter!</button>`
 
-This is needed to fire the filter function, at the same time, in this div will be append all the checkbox to filter the data, but this is done by js after reading all the data attribute values, you can add your own costum css code to style as you want.
+This is needed to fire the filter function, in this div will be append all the checkboxs to filter the data, but this is done by js after reading all the data attribute values, you can add your own costum css code to style as you want.
 
 ![filter div codeblock](https://user-images.githubusercontent.com/92517402/183067878-1686016a-3d74-4d1e-b870-4e796abe025d.png)
 
 **Take note of the codeblock id, or rename as you want**
 
-
+note: in my case filter button is displaye before the option checkbox, if you want it before you can add a simple div with a custom id `<div class"what you want" id="filter-checkbox></div>` and use this div id in `PUT_YOUR_CODEBLOCK_ID` (see after where)
 
 # 2) Add the script function
 
@@ -41,17 +41,27 @@ In the end of the page, or anyway after the content with the attributes you need
 
 ## 2-1)
 
-Replace PUT_YOUR_ATTRIBUTE_NAME (twice time) with the attribute you inserted on the div
-Repalace PUT_YOUR_CODEBLOCK_ID with the filter buttom code block ID (the one you added before)
+Replace `PUT_YOUR_ATTRIBUTE_NAME` (twice time) with the attribute you inserted on the div and 
+repalace `PUT_YOUR_CODEBLOCK_ID` with the filter buttom code block ID (the one you added before)
 
 
 # 3) Add the class to hide unselected attributes
 
-You can do it in many ways, in my case I added a new css file, to the rejected item will be applied the .flt-invisible class, in my case the class is simply:
+You can do it in many ways, in my case I added a new css file, to the item that don't respect the filter will be applied the .flt-invisible class, in my case the class is simply:
 `
 .flt-invisible{
 	display: none;
 }
 `
+I suggest you to add new styleshett cause you can add olso the class to style the filter button and checkbox.
 
-4) Save an test It
+# 4) Add attribute to the divs you want to be filter
+
+To add an attribute you can choose the div, go to **Advanced->Attributes** click on attribute.
+
+![addAttributes](https://user-images.githubusercontent.com/92517402/183071290-973dc5ba-c86c-4c98-b2e5-fb2497bb9202.jpg)
+
+
+# 5) Save an test It
+
+If everything is ok, you shuld be able to see checkbox next to the button
