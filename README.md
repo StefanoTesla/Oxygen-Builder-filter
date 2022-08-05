@@ -86,3 +86,5 @@ If everything is ok, you shuld be able to see checkbox next to the button and so
 
 
 As I told, is a very simple, but efficent way to make a simple filter avoideng reloading the page, you can costumize it as you need, and if you find some bugs report to me! If you like a star it's appreciated ⭐
+
+Pro tip: don't kill me if the script is not wrote as a senior js developer would have done, making website is not my job (unfortunatly), and I don't use javascript every day.
