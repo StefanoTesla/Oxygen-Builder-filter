@@ -36,7 +36,7 @@ Object.keys(obj).forEach(key => {
         });
 
 
-function filter(){
+function st-filter(){
     let v = [];
     let n = [];
     let a = filterDiv.querySelectorAll(".filter-checkbox");
