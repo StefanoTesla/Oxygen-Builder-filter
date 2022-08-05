@@ -26,7 +26,7 @@ This script need two block code, one custom css class, and div with attribute se
 
 A custmm code block where you want and past this code:
 
-`<button type="button" onclick="st-filter()">Filter!</button>`
+`<button type="button" onclick="stFilter()">Filter!</button>`
 
 This is needed to fire the filter function, in this div will be append all the checkboxs to filter the data, but this is done by js after reading all the data attribute values, you can add your own custom css code to style as you want.
 
